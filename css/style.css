@@ -1,23 +1,55 @@
+@font-face {
+    font-family: 'Font-01';
+    src: url('Font-01.woff2') format('woff2'),
+        url('Font-01.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 .hero {
+    background-color: black;
     height: 100vh;
     display: grid;
     grid-gap: 1rem;
     padding: 0 1rem;
     position: relative;
+    font-family: 'Font-01';
 }
 
 #about {
     height: 100vh;
-    background-color: white;
+    background-color: #FFC105;
+    display: grid;
+    /* color: white; */
+}
+
+.about-me {
+    padding: 0 1rem;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(256,256,256,0.5);
+    transition: border 0.3s ease-in-out;
+    color: white;
+}
+
+a:hover {
+    border-color: white;
 }
 
 .left {
@@ -39,7 +71,7 @@ body {
 }
 
 .name>span {
-    color: #FF4500;
+    color: #FFC105;
 }
 
 .scroll-down {
@@ -89,5 +121,10 @@ body {
     }
     .left {
         margin: 0 3vw;
+    }
+
+    .about-me {
+        margin:  auto;
+        max-width: 800px;
     }
 }
