@@ -28,28 +28,28 @@ body {
 
 #about {
     height: 100vh;
-    background-color: #FFC105;
+    background-color: black;
     display: grid;
-    /* color: white; */
+    color: white;
 }
 
 .about-me {
     padding: 0 1rem;
     margin-top: 2rem;
     line-height: 1.5rem;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
-a {
+.about-me a {
     text-decoration: none;
-    border-bottom: 1px solid rgba(256,256,256,0.5);
+    border-bottom: 1px solid rgb(255 193 5 / 0.5);
     transition: border 0.3s ease-in-out;
-    color: white;
+    color: #FFC105;
 }
 
-a:hover {
-    border-color: white;
+.about-me a:hover {
+    border-color: #FFC105;
 }
 
 .left {
