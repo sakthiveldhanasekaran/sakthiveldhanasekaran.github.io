@@ -16,6 +16,13 @@ body {
     font-size: 1rem;
 }
 
+.sticky-logo {
+    position: fixed;
+    z-index: 1;
+    left: 1rem;
+    top: 1rem;
+}
+
 .hero {
     background-color: black;
     height: 100vh;
@@ -126,5 +133,18 @@ body {
     .about-me {
         margin:  auto;
         max-width: 800px;
+    }
+
+    .logo-card {
+        height: 160px;
+        width: 160px;
+        background: white;
+        display: grid;
+        border-radius: 50%;
+    }
+
+    .logo-card img {
+        margin: auto;
+        width: 75%;
     }
 }
