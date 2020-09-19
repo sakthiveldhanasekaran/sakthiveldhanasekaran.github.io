@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Font-01';
-    src: url('Font-01.woff2') format('woff2'),
-        url('Font-01.woff') format('woff');
+    src: url('Font-01.woff2') format('woff2'), url('Font-01.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -24,12 +23,12 @@ body {
 }
 
 .hero {
+    background: url('../img/sakthivel_dhanasekaran_s_3d_model.png') right center no-repeat;
+    background-size: contain;
     background-color: black;
     height: 100vh;
     display: grid;
-    grid-gap: 1rem;
     padding: 0 1rem;
-    position: relative;
     font-family: 'Font-01';
 }
 
@@ -59,21 +58,12 @@ body {
     border-color: #FFC105;
 }
 
-.left {
-    background: url('../img/sakthivel_dhanasekaran_s_3d_model.png') center center no-repeat;
-    background-size: contain;
-    margin-top: 1rem;
-}
-
-.right {
+.hero-content {
     color: white;
-    position: relative;
+    margin: auto 0;
 }
 
-.right>div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.hero-content>div {
     font-size: 3rem;
 }
 
@@ -112,12 +102,8 @@ body {
 
 /* Media queries */
 
-@media (min-width: 800px) {
-    .hero {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 1rem;
-    }
-    .right>div {
+@media (min-width: 768px) {
+    .hero-content>div {
         font-size: calc(5vw + 11.7px);
     }
     .scroll-down {
@@ -126,15 +112,13 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
-    .left {
-        margin: 0 3vw;
+    .hero-content {
+        margin: auto 3.125rem;
     }
-
     .about-me {
-        margin:  auto;
+        margin: auto;
         max-width: 800px;
     }
-
     .logo-card {
         height: 160px;
         width: 160px;
@@ -142,7 +126,6 @@ body {
         display: grid;
         border-radius: 50%;
     }
-
     .logo-card img {
         margin: auto;
         width: 75%;
