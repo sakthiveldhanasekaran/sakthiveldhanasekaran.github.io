@@ -7,7 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "sonar": "sonar-scanner"
+    "test.coverage.nomap.ci": "ng test --watch=false --code-coverage=true --source-map=false --browsers=ChromeHeadlessCI",
+    "sonar": "sonar-scanner",
+    "prepare": "husky install",
+    "prettier:check": "prettier -c",
+    "prettier:write": "prettier -w",
+    "precommit": "lint-staged -v && npm run test.coverage.nomap.ci"
   },
   "private": true,
   "dependencies": {
@@ -28,12 +33,18 @@
     "@angular/cli": "~16.2.3",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "husky": "^8.0.3",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-sonarqube-unit-reporter": "^0.0.23",
+    "lint-staged": "^14.0.1",
+    "playwright": "^1.38.1",
+    "prettier": "^3.0.3",
     "sonar-scanner": "^3.1.0",
     "typescript": "~5.1.3"
   }

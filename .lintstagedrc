@@ -1,0 +1,3 @@
+{
+  "*.{html,scss,ts,json}":["npm run prettier:write"]
+}

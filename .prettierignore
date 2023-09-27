@@ -1,0 +1,6 @@
+tsconfig.json
+tsconfig.app.json
+tsconfig.spec.json
+/dist
+.vscode
+/docs

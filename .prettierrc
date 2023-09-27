@@ -1,0 +1,21 @@
+{
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": ["*.scss"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "singleQuote": false,
+        "printWidth": 180
+      }
+    }
+  ]
+}
