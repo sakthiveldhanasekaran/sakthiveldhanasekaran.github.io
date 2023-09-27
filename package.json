@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "prettier:check": "prettier -c",
     "prettier:write": "prettier -w",
-    "precommit": "lint-staged -v && npm run test.coverage.nomap.ci"
+    "precommit": "lint-staged -v && npm run test.coverage.nomap.ci",
+    "lint": "eslint --fix"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,9 @@
     "@angular/cli": "~16.2.3",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
     "husky": "^8.0.3",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
