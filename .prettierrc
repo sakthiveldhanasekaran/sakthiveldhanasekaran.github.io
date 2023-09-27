@@ -2,6 +2,7 @@
   "arrowParens": "avoid",
   "bracketSameLine": true,
   "singleQuote": true,
+  "endOfLine": "auto",
   "trailingComma": "all",
   "overrides": [
     {

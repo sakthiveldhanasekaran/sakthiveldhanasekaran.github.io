@@ -17,7 +17,7 @@
   "rules": {
     "indent": ["warn", 2],
     "linebreak-style": "off",
-    "quotes": ["off", "single", { "allowTemplateLiterals": true }],
+    // "quotes": ["off", "single", { "allowTemplateLiterals": true }],
     "semi": ["error", "always"],
     "camelcase": "off",
     "dot-notation": "error",
@@ -39,7 +39,18 @@
     "prefer-const": "warn",
     "radix": "error",
     "space-in-parens": "error",
-    "lines-between-class-members": "warn",
+    "lines-between-class-members": [
+      "warn",
+      {
+        "enforce": [
+          { "blankLine": "never", "prev": "*", "next": "field" },
+          { "blankLine": "always", "prev": "field", "next": "method" },
+          { "blankLine": "always", "prev": "method", "next": "method" }
+        ]
+      }
+    ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/consistent-type-definitions": "error",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
